@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Monthly Pizza Pop-Up!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-placeholder">
+            <img src="pizzalogo.png" alt="Pizza Pop-Up Logo">
+        </div>
+
+        <h1 id="main-title" onmouseover="changeTitle()" onmouseout="resetTitle()">Monthly Pizza Pop-Up!</h1>
+
+        <div class="event-details">
+            <h2>Join Us For The Release!</h2>
+            <p><strong>Date:</strong> Sunday, 19th September, 2025</p>
+            <p><strong>Time:</strong> 18.00</p>
+            <p><strong>Location:</strong> Autobots Pizza, Jl. Gelap Hitam No.67, Bandung</p>
+        </div>
+
+        <div class="menu-tease">
+            <h3>Time to Feast! 🤤</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="bananapizza.png" alt="Spicy Chorizo Delight">
+                    <h4>Banana Pizza</h4>
+                    <p>A nice mix of sweet and savory, with sweet bananas on top with a crunch on the pizza crust, perfect for adventurous taste buds.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="chocolatepizza.png" alt="Garden Pesto Dream">
+                    <h4>Chocolate Pizza</h4>
+                    <p>A sweet tasting pizza, filled with creamy chocolate on top of a warm crispy crust along with other delicious sweet treats and toppings.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="durianpizza.png" alt="Mushroom Truffle Bliss">
+                    <h4>Durian Pizza</h4>
+                    <p>Our best release yet, the DURIAN PIZZA, filled with creamy, rich, and sweet durian along with melted cheese on one pizza, a long lasting flavor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="voting-section">
+            <h3>Vote for the pizza you love most!</h3>
+            <button class="vote-button1" onclick="incrementVote1()">Banana Pizza</button>
+            <button class="vote-button2" onclick="incrementVote2()">Chocolate Pizza</button>
+            <button class="vote-button3" onclick="incrementVote3()">Durian Pizza</button>
+            <p>Banana Pizza: <span id="vote-count1">0</span></p>
+            <p>Chocolate Pizza: <span id="vote-count2">0</span></p>
+            <p>Durian Pizzaz    : <span id="vote-count3">0</span></p>
+        </div>
+
+        <div class="surprise-section">
+            <button class="surprise-button" onclick="changeBackground()">Surprise Color Background!</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
